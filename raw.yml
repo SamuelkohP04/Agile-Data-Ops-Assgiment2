@@ -1,0 +1,452 @@
+models:
+  - name: raw_orders
+    columns:
+      - name: ORDERID
+        description: Unique identifier for each order, integer type.
+        tests:
+          - unique
+          - not_null
+      - name: CUSTOMERID
+        description: Unique identifier for each customer, string type.
+        tests:
+          - not_null
+      - name: EMPLOYEEID
+        description: Unique identifier for each employee, integer type.
+        tests:
+          - not_null
+      - name: ORDERDATE
+        description: Date of when the order was made, datetime type.
+        tests:
+          - not_null
+      - name: REQUIREDDATE
+        description: Date of when the order is required, datetime type.
+        tests:
+          - not_null
+      - name: SHIPPEDDATE
+        description: Date of when the order was shipped, datetime type. Nullable, as
+          some orders may not yet be shipped.
+      - name: SHIPVIA
+        description: What the order was shipped by, integer type.
+        tests:
+          - not_null         
+        
+      - name: FREIGHT
+        description: Delivery cost, integer type.
+        tests:
+          - not_null
+      - name: SHIPNAME
+        description: Name of the person or company to whom the order should be shipped
+          to, string type.
+        tests:
+          - not_null
+      - name: SHIPADDRESS
+        description: Address of the person or company to whom the order should be
+          shipped to, string type.
+        tests:
+          - not_null
+      - name: SHIPCITY
+        description: City of the person or company to whom the order should be shipped
+          to, string type.
+        tests:
+          - not_null
+      - name: SHIPREGION
+        description: Region of the person or company to whom the order should be shipped
+          to, string type.
+      - name: SHIPPOSTALCODE
+        description: Postal Code of the person or company to whom the order should be
+          shipped to, string type.
+        tests:
+          - not_null
+      - name: SHIPCOUNTRY
+        description: Country of the person or company to whom the order should be
+          shipped to, string type.
+        tests:
+          - not_null
+    description: Order View for Order Table. This is where information of orders lie in.
+  - name: raw_order_detail
+    columns:
+      - name: ORDERID
+        description: Unique identifier for Orders, acts as a composite key with
+          ProductID. Integer type.
+        tests:
+          - not_null
+      - name: PRODUCTID
+        description: Unique identifier for Product, acts as a composite key with
+          OrderID. Integer type.
+        tests:
+          - not_null
+      - name: UNITPRICE
+        description: Price of each unit. Integer type.
+        tests:
+          - not_null
+      - name: QUANTITY
+        description: Quantity of orders. Integer type.
+        tests:
+          - not_null
+      - name: DISCOUNT
+        description: Discount given for each order, float type.
+        tests:
+          - not_null
+    description: Raw table for Order Detail
+  - name: raw_customer
+    columns:
+      - name: CUSTOMERID
+        description: Unique Identifier for customers. String type.
+        tests:
+          - not_null
+          - unique
+      - name: COMPANYNAME
+        description: Name of the customer's company, string type.
+        tests:
+          - not_null
+      - name: CONTACTNAME
+        description: Name of the primary contact person, string type.
+        tests:
+          - not_null
+      - name: CONTACTTITLE
+        description: Title of the primary contact person, string type.
+        tests:
+          - not_null
+      - name: ADDRESS
+        description: Customer's address, string type.
+        tests:
+          - not_null
+      - name: CITY
+        description: City where the customer is located, string type.
+        tests:
+          - not_null
+      - name: REGION
+        description: Region where the customer is located, string type.
+      - name: POSTALCODE
+        description: Postal code of the customer's location, string type.
+        tests:
+          - not_null
+      - name: COUNTRY
+        description: Country where the customer is located, string type.
+        tests:
+          - not_null
+      - name: PHONE
+        description: Customer's phone number, string type.
+        tests:
+          - not_null
+      - name: FAX
+        description: Customer's fax number, string type.
+        tests:
+          - not_null
+    description: Customer View for Customer Table. This is where information of
+      customers lie in.
+  - name: raw_category
+    description: Raw view for category table.
+    columns:
+      - name: CATEGORYID
+        tests:
+          - unique
+          - not_null      
+        description: Primary Key, unique identifier for each category. Integer type.
+      - name: CATEGORYNAME
+        tests:
+          - not_null      
+        description: >-
+          Name of the category, a string type.
+
+
+          | categoryname   | definition                                                                |
+
+          |----------------|---------------------------------------------------------------------------|
+
+          | Beverages      | Products can be Soft drinks, coffees, teas, beers or ales categories      |
+
+          | Condiments     | Products can be sweet and savoury sauces, relishes, spreads or seasonings |
+
+          | Confections    | Products can be desserts, candies or sweet breads                         |
+
+          | Dairy Products | Products are different kinds of cheese                                    |
+
+          | Grains/Cereals | Products can be breads, crackers, pasta and cereal                        |
+
+          | Meat/Poultry   | Products can be different kinds of meat prepared for sale                 |
+
+          | Produce        | Products can be dried fruits or bean curd                                 |
+
+          | Seafood        | Products can be seaweed or fish                                           |
+      - name: DESCRIPTION
+        description: Description of the category. A string type.
+        tests:
+          - not_null
+      - name: PICTURE
+        description: Binary data (PICTURE) of the category.
+        tests:
+          - not_null        
+  - name: raw_product
+    description: Raw view for product table.
+    columns:
+      - name: PRODUCTID
+        description: Unique identifier for each product, integer type.
+        tests:
+          - unique
+          - not_null        
+      - name: PRODUCTNAME
+        tests:
+          - not_null      
+        description: Name of each product, string type.
+      - name: SUPPLIERID
+        tests:
+          - not_null      
+        description: ID of each supplier, integer type. This is also a foreign key.
+      - name: CATEGORYID
+        tests:
+          - not_null      
+        description: " ID of the category (Foreign Key) the product belongs to, string
+          type."
+      - name: QUANTITYPERUNIT
+        tests:
+          - not_null      
+        description: Quantity of the product per unit, this is a string type.
+      - name: UNITPRICE
+        tests:
+          - not_null      
+        description: Price per unit of the product (in USD), float type.
+      - name: UNITSINSTOCK
+        tests:
+          - not_null      
+        description: Number of units in stock, integer type.
+      - name: UNITSONORDER
+        tests:
+          - not_null      
+        description: Number of units on order, integer type.
+      - name: REORDERLEVEL
+        tests:
+          - not_null      
+        description: >-
+          Minimum quantity that should trigger a reorder of the particular
+          product, integer type.
+
+
+          | Reorder 		             | definition			                              |
+
+          |----------------------------|----------------------------------------------------|
+
+          | 0	         	             | Products inventory are above company limit         |
+
+          | 1	        	             | Products have been discontinued                    |
+
+          |----------------------------|----------------------------------------------------|
+      - name: DISCONTINUED
+        tests: []
+        accepted_values: 
+        values:
+          - '0'
+          - '1'      
+        description: >-
+          Indicates with a 1 (TRUE bool) if the product has been discontinued,
+          boolean/int type.
+
+
+          | Discontinued   	         | definition		                        	      |
+
+          |----------------------------|----------------------------------------------------|
+
+          | 0	         	             | Products are still being sold                      |
+
+          | 1	        	             | Products have been discontinued                    |
+
+          |----------------------------|----------------------------------------------------|
+  - name: raw_employee
+    description: Raw view of employees table.
+    columns:
+      - name: EMPLOYEEID
+        description: " Unique Employee identifier (Primary Key), integer type."
+        tests:
+          - unique
+          - not_null        
+      - name: LASTNAME
+        tests:
+          - not_null      
+        description: Last name of the employee, string type.
+      - name: FIRSTNAME
+        tests:
+          - not_null      
+        description: First name of the employee, string type.
+      - name: TITLE
+        tests:
+          - not_null      
+        description: >
+          Job title of the employee, string type.
+
+
+          | Title                     | Reporting/Supervisor                                                            |
+
+          |---------------------------|---------------------------------------------------------------------------------|
+
+          | Sales Representative      | Reports to Sales Manager/Vice President Sales                                   |
+
+          | Inside Sales Coordinator  | Reports to Sales Manager/Vice President Sales                                   |
+
+          | Sales Manager             | Supervises Sales Representative and Coordinator, reports to Vice President Sales|
+
+          | Vice President Sales      | Supervises all staff, highest position in dataset                               |
+      - name: TITLEOFCOURTESY
+        tests:
+          - not_null      
+        description: Courtesy title for the employee, string type.
+      - name: BIRTHDATE
+        tests:
+          - not_null      
+        description: Birthdate of the employee, datetime type.
+      - name: HIREDATE
+        tests:
+          - not_null      
+        description: Date when the employee was hired, datetime type.
+      - name: ADDRESS
+        tests:
+          - not_null      
+        description: Employee's address, string type.
+      - name: CITY
+        tests:
+          - not_null      
+        description: City where the employee is located, string type.
+      - name: REGION
+        tests:
+          - not_null      
+        description: Region where the employee is located, string type.
+      - name: POSTALCODE
+        tests:
+          - not_null      
+        description: " Postal code of the employee's location, integer type."
+      - name: COUNTRY
+        tests:
+          - not_null      
+        description: Country where the employee is located, string type.
+      - name: HOMEPHONE
+        tests:
+          - not_null      
+        description: Employee's home phone number, integer type.
+      - name: EXTENSION
+        tests:
+          - not_null      
+        description: Employee's phone extension, integer type.
+      - name: PHOTO
+        tests:
+          - not_null      
+        description: Employee's photo (binary data)
+      - name: NOTES
+        tests:
+          - not_null      
+        description: Any additional notes about the employee, string type.
+      - name: REPORTSTO
+        tests:
+          - not_null      
+        description: ID of the employee's supervisor (Foreign Key), integer type (with
+          supervisor key id as value)
+      - name: PHOTOPATH
+        tests:
+          - not_null          
+        description: File path to the employee's photo, string type
+  - name: raw_employee_territory
+    description: Raw view for employee territory.
+    columns:
+      - name: EMPLOYEEID
+        tests:
+          - not_null      
+        description: " Employee identifier (Primary Key), integer type."
+      - name: TERRITORYID
+        tests:
+          - not_null          
+        description: Territory identifier (Foreign Key), integer type.
+  - name: raw_region
+    description: Raw view for region table.
+    columns:
+      - name: REGIONID
+        tests:
+          - unique
+          - not_null      
+        description: Region identifier (Primary Key), integer type.
+      - name: REGIONDESCRIPTION
+        tests:
+          - not_null      
+        description: Description of the region, string type.
+  - name: raw_territory
+    description: Raw view for territory table.
+    columns:
+      - name: TERRITORYID
+        tests:
+          - unique
+          - not_null      
+        description: Territory identifier (Primary Key), integer type.
+      - name: TERRITORYDESCRIPTION
+        tests:
+          - not_null      
+        description: Description of the territory, string type.
+      - name: REGIONID
+        tests:
+          - not_null      
+        description: ID of the region to which the territory belongs (Foreign Key),
+          integer type.
+  - name: raw_supplier
+    description: Raw view for supplier table.
+    columns:
+      - name: SUPPLIERID
+        description: " Unique Supplier identifier (Primary Key), integer type."
+        tests:
+          - unique
+          - not_null        
+      - name: COMPANYNAME
+        description: Name of the supplier's company, string type.
+        tests:
+          - not_null        
+      - name: CONTACTNAME
+        tests:
+          - not_null      
+        description: Name of the primary contact person, string type.
+      - name: CONTACTTITLE
+        tests:
+          - not_null      
+        description: Title of the primary contact person, string type.
+      - name: ADDRESS
+        tests:
+          - not_null      
+        description: " Supplier's address, string type."
+      - name: CITY
+        tests:
+          - not_null      
+        description: City where the supplier is located, string type.
+      - name: REGION
+        tests:
+          - not_null      
+        description: Region where the supplier is located, string type.
+      - name: POSTALCODE
+        tests:
+          - not_null      
+        description: " Postal code of the supplier's location, string type."
+      - name: COUNTRY
+        tests:
+          - not_null      
+        description: Country where the supplier is located, string type.
+      - name: PHONE
+        tests:
+          - not_null      
+        description: Supplier's phone number, string type.
+      - name: FAX
+        tests:
+          - not_null      
+        description: " Supplier's fax number, string type."
+      - name: HOMEPAGE
+        tests:
+          - not_null      
+        description: " Supplier's homepage URL, string type (LINK)."
+  - name: raw_shipper
+    description: Raw view for shipper table.
+    columns:
+      - name: SHIPPERID
+        tests:
+          - unique
+          - not_null      
+        description: Unique Shipper identifier (Primary Key) for each shipper, integer type.
+      - name: COMPANYNAME
+        tests:
+          - not_null      
+        description: Name of the shipping company, string type.
+      - name: PHONE
+        tests:
+          - not_null      
+        description: Company's phone number, integer type.
