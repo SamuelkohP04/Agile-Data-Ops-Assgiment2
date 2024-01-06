@@ -1,0 +1,9 @@
+models:
+  - name: raw_employee_territory
+    description: Raw table for employee territory. 
+    columns:
+      - name: EMPLOYEEID   
+        description: Employee identifier (Foreign key from employee), acts as a composite key with territoryid, integer type.
+
+      - name: TERRITORYID
+        description: Territory identifier (Foreign Key fromm territory), acts as a composite key with employeeid, integer type.

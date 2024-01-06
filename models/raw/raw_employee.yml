@@ -1,0 +1,57 @@
+models:
+  - name: raw_employee
+    description: Raw table for employees. Provides information about employees.
+    columns:
+      - name: EMPLOYEEID
+        description: Unique Employee identifier (Primary Key), integer type.
+  
+      - name: LASTNAME
+        description: Last name of the employee, string type.
+
+      - name: FIRSTNAME      
+        description: First name of the employee, string type.
+
+      - name: TITLE  
+        description: '{{ doc("title") }}'
+
+      - name: TITLEOFCOURTESY
+        description: Courtesy title for the employee, string type.
+
+      - name: BIRTHDATE    
+        description: Birthdate of the employee, datetime type.
+
+      - name: HIREDATE 
+        description: Date when the employee was hired, datetime type.
+
+      - name: ADDRESS    
+        description: Employee's address, string type.
+
+      - name: CITY     
+        description: City where the employee is located, string type.
+
+      - name: REGION    
+        description: Region where the employee is located, string type.
+
+      - name: POSTALCODE   
+        description: Postal code of the employee's location, string type.
+
+      - name: COUNTRY
+        description: Country where the employee is located, string type.
+
+      - name: HOMEPHONE     
+        description: Employee's home phone number, string type.
+
+      - name: EXTENSION     
+        description: Employee's phone extension, string type.
+
+      - name: PHOTO    
+        description: Employee's photo (binary data)
+
+      - name: NOTES   
+        description: Any additional notes about the employee, string type.
+
+      - name: REPORTSTO    
+        description: ID of the employee's supervisor (Unary Key), integer type (with supervisor's employeeid as value)
+
+      - name: PHOTOPATH      
+        description: File path to the employee's photo, string type

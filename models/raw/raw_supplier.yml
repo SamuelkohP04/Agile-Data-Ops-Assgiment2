@@ -1,0 +1,39 @@
+models:
+  - name: raw_supplier
+    description: Raw table for supplier. Information about the suppliers can be found here.
+    columns:
+      - name: SUPPLIERID
+        description: Unique Supplier identifier (Primary Key), integer type.
+    
+      - name: COMPANYNAME
+        description: Name of the supplier's company, string type.
+
+      - name: CONTACTNAME
+        description: Name of the primary contact person, string type.
+
+      - name: CONTACTTITLE
+        description: Title of the primary contact person, string type.
+
+      - name: ADDRESS
+        description: Supplier's address, string type.
+
+      - name: CITY
+        description: City where the supplier is located, string type.
+
+      - name: REGION
+        description: Region where the supplier is located, string type.
+
+      - name: POSTALCODE
+        description: Postal code of the supplier's location, string type.
+
+      - name: COUNTRY    
+        description: Country where the supplier is located, string type.
+
+      - name: PHONE    
+        description: Supplier's phone number, string type.
+
+      - name: FAX    
+        description: Supplier's fax number, string type.
+
+      - name: HOMEPAGE   
+        description: Supplier's homepage URL, string type (LINK).

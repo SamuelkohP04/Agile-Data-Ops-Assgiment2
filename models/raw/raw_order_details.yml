@@ -1,0 +1,19 @@
+models: 
+  - name: raw_order_detail
+    description: Raw table for Order Detail. Further information about the orders can be found here
+    columns:
+      - name: ORDERID
+        description: Unique identifier for Order (foreign key from Order), acts as a composite key with ProductID. Integer type.
+
+      - name: PRODUCTID
+        description: Unique identifier for Product being ordered (foreign key from Product) acts as a composite key with OrderID. Integer type.
+
+      - name: UNITPRICE
+        description: Price of one unit of product at the time the order was placed (USD and not including discount), float type
+
+      - name: QUANTITY
+        description: Quantity of units ordered. Integer type.
+ 
+      - name: DISCOUNT
+        description: Discount percentage given to price per unit, float type.
+

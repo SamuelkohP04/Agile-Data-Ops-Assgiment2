@@ -1,0 +1,54 @@
+models:
+  - name: raw_orders
+    description: Raw table for order. This is where information of orders lie in.
+    columns:
+      - name: ORDERID
+        description: Unique identifier for each order, integer type.
+
+      - name: CUSTOMERID
+        description: Unique identifier for customer who ordered (foreign key from customer table), string type.
+
+      - name: EMPLOYEEID
+        description: Unique identifier for employee processing the order (foreign key from employee table), integer type.
+
+      - name: ORDERDATE
+        description: Date of when the order was made, datetime type.
+
+      - name: REQUIREDDATE
+        description: Date of when the order is required, datetime type.
+
+      - name: SHIPPEDDATE
+        description: Date of when the order was shipped, datetime type. Nullable, as
+          some orders may not yet be shipped.
+
+      - name: SHIPVIA
+        description: ID of the shipping company that shipped the order (Foreign Key from Shipper table), integer type.
+
+      - name: FREIGHT
+        description: Freight shipping cost, float type.
+
+      - name: SHIPNAME
+        description: Name of the person or company to whom the order should be shipped
+          to, string type.
+
+      - name: SHIPADDRESS
+        description: Address of the person or company to whom the order should be
+          shipped to, string type.
+
+      - name: SHIPCITY
+        description: City of the person or company to whom the order should be shipped
+          to, string type.
+
+      - name: SHIPREGION
+        description: Region of the person or company to whom the order should be shipped
+          to, string type.
+
+      - name: SHIPPOSTALCODE
+        description: Postal Code of the person or company to whom the order should be
+          shipped to, string type.
+
+      - name: SHIPCOUNTRY
+        description: Country of the person or company to whom the order should be
+          shipped to, string type.
+
+   

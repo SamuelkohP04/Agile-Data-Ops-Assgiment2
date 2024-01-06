@@ -688,3 +688,1177 @@ SELECT * FROM ASSIGNMENT2.NWT.TERRITORY
 [0m11:13:15.234618 [debug] [MainThread]: Command `dbt run` succeeded at 11:13:15.234618 after 4.74 seconds
 [0m11:13:15.235699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C6A28DD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C7000CE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C703AED10>]}
 [0m11:13:15.235699 [debug] [MainThread]: Flushing usage events
+[0m15:50:06.375340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A231874A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2315EE990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A231875290>]}
+
+
+============================== 15:50:06.380528 | 84bc9068-b0c3-4353-9322-497eea0a5c65 ==============================
+[0m15:50:06.380528 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:50:06.382023 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:50:06.815560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '84bc9068-b0c3-4353-9322-497eea0a5c65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A23187EF10>]}
+[0m15:50:06.831069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '84bc9068-b0c3-4353-9322-497eea0a5c65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2318857D0>]}
+[0m15:50:06.833537 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m15:50:06.844595 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m15:50:06.941453 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:50:06.941453 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:50:06.942957 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ADO_Assignment_updated.staging
+- models.ADO_Assignment_updated.reporting
+[0m15:50:06.947709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '84bc9068-b0c3-4353-9322-497eea0a5c65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2325A2590>]}
+[0m15:50:06.949709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '84bc9068-b0c3-4353-9322-497eea0a5c65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A23265FB50>]}
+[0m15:50:06.951175 [info ] [MainThread]: Found 11 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m15:50:06.951175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '84bc9068-b0c3-4353-9322-497eea0a5c65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A22DD08FD0>]}
+[0m15:50:06.953582 [info ] [MainThread]: 
+[0m15:50:06.954603 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:50:06.956171 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_Assignment2_NWT'
+[0m15:50:06.968221 [debug] [ThreadPool]: Using snowflake connection "list_Assignment2_NWT"
+[0m15:50:06.968221 [debug] [ThreadPool]: On list_Assignment2_NWT: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "list_Assignment2_NWT"} */
+show terse objects in Assignment2.NWT
+[0m15:50:06.969221 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:07.903914 [debug] [ThreadPool]: SQL status: SUCCESS 25 in 1.0 seconds
+[0m15:50:07.906889 [debug] [ThreadPool]: On list_Assignment2_NWT: Close
+[0m15:50:07.973654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '84bc9068-b0c3-4353-9322-497eea0a5c65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A22F85C7D0>]}
+[0m15:50:07.974657 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m15:50:07.974657 [info ] [MainThread]: 
+[0m15:50:07.981779 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_category
+[0m15:50:07.981779 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_customer
+[0m15:50:07.983019 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_employee
+[0m15:50:07.983019 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:07.983019 [debug] [Thread-5 (]: Began running node model.ADO_Assignment_updated.raw_order
+[0m15:50:07.984184 [debug] [Thread-6 (]: Began running node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:07.985189 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_category'
+[0m15:50:07.986192 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_customer'
+[0m15:50:07.986192 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee'
+[0m15:50:07.987475 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee_territory'
+[0m15:50:07.988474 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order'
+[0m15:50:07.988978 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order_details'
+[0m15:50:07.988978 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_category
+[0m15:50:07.989982 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_customer
+[0m15:50:07.989982 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_employee
+[0m15:50:07.991196 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:07.991196 [debug] [Thread-5 (]: Began compiling node model.ADO_Assignment_updated.raw_order
+[0m15:50:07.991196 [debug] [Thread-6 (]: Began compiling node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:07.997734 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_category"
+[0m15:50:08.000180 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_customer"
+[0m15:50:08.003197 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee"
+[0m15:50:08.005207 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:50:08.007212 [debug] [Thread-5 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order"
+[0m15:50:08.009715 [debug] [Thread-6 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order_details"
+[0m15:50:08.011845 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (compile): 15:50:07.992475 => 15:50:08.010729
+[0m15:50:08.011845 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (compile): 15:50:07.998735 => 15:50:08.011845
+[0m15:50:08.012847 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (compile): 15:50:08.001183 => 15:50:08.011845
+[0m15:50:08.012847 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (compile): 15:50:08.003197 => 15:50:08.012847
+[0m15:50:08.012847 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (compile): 15:50:08.006212 => 15:50:08.012847
+[0m15:50:08.014263 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_category
+[0m15:50:08.014263 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (compile): 15:50:08.008212 => 15:50:08.014263
+[0m15:50:08.014263 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_customer
+[0m15:50:08.015693 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_employee
+[0m15:50:08.015693 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:08.016694 [debug] [Thread-5 (]: Began executing node model.ADO_Assignment_updated.raw_order
+[0m15:50:08.016694 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (execute): 15:50:08.016694 => 15:50:08.016694
+[0m15:50:08.018144 [debug] [Thread-6 (]: Began executing node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:08.018144 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (execute): 15:50:08.018144 => 15:50:08.018144
+[0m15:50:08.018144 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (execute): 15:50:08.018144 => 15:50:08.018144
+[0m15:50:08.019471 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (execute): 15:50:08.019471 => 15:50:08.019471
+[0m15:50:08.020471 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (execute): 15:50:08.019471 => 15:50:08.019471
+[0m15:50:08.021919 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_category
+[0m15:50:08.022957 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (execute): 15:50:08.021919 => 15:50:08.021919
+[0m15:50:08.022957 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_customer
+[0m15:50:08.024383 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_employee
+[0m15:50:08.025773 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:08.025773 [debug] [Thread-5 (]: Finished running node model.ADO_Assignment_updated.raw_order
+[0m15:50:08.027257 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_product
+[0m15:50:08.027760 [debug] [Thread-6 (]: Finished running node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:08.028905 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_region
+[0m15:50:08.028905 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:08.030358 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:08.030862 [debug] [Thread-5 (]: Began running node model.ADO_Assignment_updated.raw_territory
+[0m15:50:08.030862 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_category, now model.ADO_Assignment_updated.raw_product)
+[0m15:50:08.032295 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_customer, now model.ADO_Assignment_updated.raw_region)
+[0m15:50:08.033295 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee, now model.ADO_Assignment_updated.raw_shipper)
+[0m15:50:08.033295 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee_territory, now model.ADO_Assignment_updated.raw_supplier)
+[0m15:50:08.034714 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_order, now model.ADO_Assignment_updated.raw_territory)
+[0m15:50:08.034714 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_product
+[0m15:50:08.034714 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_region
+[0m15:50:08.036048 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:08.036048 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:08.037048 [debug] [Thread-5 (]: Began compiling node model.ADO_Assignment_updated.raw_territory
+[0m15:50:08.040352 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_product"
+[0m15:50:08.043869 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_region"
+[0m15:50:08.047870 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_shipper"
+[0m15:50:08.052373 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_supplier"
+[0m15:50:08.055390 [debug] [Thread-5 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_territory"
+[0m15:50:08.057390 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_product (compile): 15:50:08.037048 => 15:50:08.056390
+[0m15:50:08.057390 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_region (compile): 15:50:08.040352 => 15:50:08.057390
+[0m15:50:08.057390 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (compile): 15:50:08.044870 => 15:50:08.057390
+[0m15:50:08.058893 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (compile): 15:50:08.048870 => 15:50:08.058893
+[0m15:50:08.058893 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_product
+[0m15:50:08.059912 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_territory (compile): 15:50:08.052373 => 15:50:08.059912
+[0m15:50:08.060912 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_region
+[0m15:50:08.060912 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:08.061912 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:08.061912 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_product (execute): 15:50:08.061912 => 15:50:08.061912
+[0m15:50:08.062912 [debug] [Thread-5 (]: Began executing node model.ADO_Assignment_updated.raw_territory
+[0m15:50:08.064097 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_region (execute): 15:50:08.062912 => 15:50:08.062912
+[0m15:50:08.064097 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (execute): 15:50:08.064097 => 15:50:08.064097
+[0m15:50:08.065255 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (execute): 15:50:08.065255 => 15:50:08.065255
+[0m15:50:08.066257 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_product
+[0m15:50:08.067258 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_territory (execute): 15:50:08.067258 => 15:50:08.067258
+[0m15:50:08.068258 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_region
+[0m15:50:08.069257 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:08.070258 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:08.072542 [debug] [Thread-5 (]: Finished running node model.ADO_Assignment_updated.raw_territory
+[0m15:50:08.073546 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:50:08.074760 [debug] [MainThread]: Connection 'list_Assignment2_NWT' was properly closed.
+[0m15:50:08.074760 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_product' was properly closed.
+[0m15:50:08.074760 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_region' was properly closed.
+[0m15:50:08.076135 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_shipper' was properly closed.
+[0m15:50:08.076135 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_supplier' was properly closed.
+[0m15:50:08.077138 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_territory' was properly closed.
+[0m15:50:08.077138 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_order_details' was properly closed.
+[0m15:50:08.079355 [debug] [MainThread]: Command end result
+[0m15:50:08.089834 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m15:50:08.090838 [info ] [MainThread]: Building catalog
+[0m15:50:08.093329 [debug] [ThreadPool]: Acquiring new snowflake connection 'Assignment2.information_schema'
+[0m15:50:08.102171 [debug] [ThreadPool]: Using snowflake connection "Assignment2.information_schema"
+[0m15:50:08.102171 [debug] [ThreadPool]: On Assignment2.information_schema: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "Assignment2.information_schema"} */
+with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from Assignment2.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from Assignment2.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('nwt'))
+      order by "column_index"
+[0m15:50:08.103173 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:11.853917 [debug] [ThreadPool]: SQL status: SUCCESS 201 in 4.0 seconds
+[0m15:50:12.453065 [debug] [ThreadPool]: On Assignment2.information_schema: Close
+[0m15:50:12.527304 [info ] [MainThread]: Catalog written to C:\Users\marke\Course\Agile-Data-Ops-Assgiment2\target\catalog.json
+[0m15:50:12.529393 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:50:12.529393 after 6.18 seconds
+[0m15:50:12.530395 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:50:12.530395 [debug] [MainThread]: Connection 'Assignment2.information_schema' was properly closed.
+[0m15:50:12.530395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A22B2FFB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A23187D7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A23187DD90>]}
+[0m15:50:12.531635 [debug] [MainThread]: Flushing usage events
+[0m15:50:21.868354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218A5BDDA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218A5BD6610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218A5BDDB50>]}
+
+
+============================== 15:50:21.872594 | 7609b3de-e775-4930-a967-f5c2d46a7040 ==============================
+[0m15:50:21.872594 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:50:21.873597 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:50:22.225411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7609b3de-e775-4930-a967-f5c2d46a7040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218A5BE0510>]}
+[0m15:50:22.245028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7609b3de-e775-4930-a967-f5c2d46a7040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218A68F1210>]}
+[0m15:50:36.528936 [error] [MainThread]: Encountered an error:
+
+[0m15:50:36.542883 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\site-packages\dbt\cli\requires.py", line 142, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\site-packages\dbt\cli\requires.py", line 168, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\site-packages\dbt\cli\requires.py", line 215, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\site-packages\dbt\cli\main.py", line 315, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\site-packages\dbt\task\serve.py", line 28, in run
+    httpd.serve_forever()
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marke\anaconda3\envs\dbt_snowflake\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m15:50:36.548533 [debug] [MainThread]: Command `dbt docs serve` failed at 15:50:36.548533 after 14.70 seconds
+[0m15:50:36.549535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189F444D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218A5BCFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218A5BD7250>]}
+[0m15:50:36.549535 [debug] [MainThread]: Flushing usage events
+[0m15:50:48.797236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023753D07690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023753B72710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023753C34390>]}
+
+
+============================== 15:50:48.801791 | 57ace6c8-2042-4353-8166-86f2a0517fe8 ==============================
+[0m15:50:48.801791 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:50:48.801791 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:50:49.144787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023753D0EA10>]}
+[0m15:50:49.160420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023753D1D7D0>]}
+[0m15:50:49.162056 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m15:50:49.172079 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m15:50:49.263994 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:50:49.264995 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:50:49.266497 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ADO_Assignment_updated.staging
+- models.ADO_Assignment_updated.reporting
+[0m15:50:49.272180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754A31310>]}
+[0m15:50:49.280748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754A4DB10>]}
+[0m15:50:49.281749 [info ] [MainThread]: Found 11 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m15:50:49.282830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023750198C50>]}
+[0m15:50:49.283980 [info ] [MainThread]: 
+[0m15:50:49.284981 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:50:49.288058 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_Assignment2'
+[0m15:50:49.300413 [debug] [ThreadPool]: Using snowflake connection "list_Assignment2"
+[0m15:50:49.301427 [debug] [ThreadPool]: On list_Assignment2: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "list_Assignment2"} */
+show terse schemas in database Assignment2
+    limit 10000
+[0m15:50:49.301427 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:50.085988 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m15:50:50.086992 [debug] [ThreadPool]: On list_Assignment2: Close
+[0m15:50:50.134110 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_Assignment2_NWT'
+[0m15:50:50.140453 [debug] [ThreadPool]: Using snowflake connection "list_Assignment2_NWT"
+[0m15:50:50.140453 [debug] [ThreadPool]: On list_Assignment2_NWT: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "list_Assignment2_NWT"} */
+show terse objects in Assignment2.NWT
+[0m15:50:50.141457 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:50.847941 [debug] [ThreadPool]: SQL status: SUCCESS 25 in 1.0 seconds
+[0m15:50:50.851050 [debug] [ThreadPool]: On list_Assignment2_NWT: Close
+[0m15:50:50.895467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237537C9910>]}
+[0m15:50:50.897386 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m15:50:50.898386 [info ] [MainThread]: 
+[0m15:50:50.904073 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_category
+[0m15:50:50.905076 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_customer
+[0m15:50:50.905076 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_employee
+[0m15:50:50.905076 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:50.906520 [debug] [Thread-5 (]: Began running node model.ADO_Assignment_updated.raw_order
+[0m15:50:50.906520 [debug] [Thread-6 (]: Began running node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:50.906520 [info ] [Thread-1 (]: 1 of 11 START sql view model NWT.raw_category .................................. [RUN]
+[0m15:50:50.907748 [info ] [Thread-2 (]: 2 of 11 START sql table model NWT.raw_customer ................................. [RUN]
+[0m15:50:50.907748 [info ] [Thread-3 (]: 3 of 11 START sql table model NWT.raw_employee ................................. [RUN]
+[0m15:50:50.909501 [info ] [Thread-4 (]: 4 of 11 START sql table model NWT.raw_employee_territory ....................... [RUN]
+[0m15:50:50.909501 [info ] [Thread-5 (]: 5 of 11 START sql table model NWT.raw_order .................................... [RUN]
+[0m15:50:50.909501 [info ] [Thread-6 (]: 6 of 11 START sql table model NWT.raw_order_details ............................ [RUN]
+[0m15:50:50.911005 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_category'
+[0m15:50:50.912195 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_customer'
+[0m15:50:50.913272 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee'
+[0m15:50:50.913272 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee_territory'
+[0m15:50:50.914703 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order'
+[0m15:50:50.914703 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order_details'
+[0m15:50:50.916189 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_category
+[0m15:50:50.916692 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_customer
+[0m15:50:50.916692 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_employee
+[0m15:50:50.917738 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:50.918242 [debug] [Thread-5 (]: Began compiling node model.ADO_Assignment_updated.raw_order
+[0m15:50:50.918242 [debug] [Thread-6 (]: Began compiling node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:50.924783 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_category"
+[0m15:50:50.926792 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_customer"
+[0m15:50:50.930797 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee"
+[0m15:50:50.933316 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:50:50.936786 [debug] [Thread-5 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order"
+[0m15:50:50.938787 [debug] [Thread-6 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order_details"
+[0m15:50:50.941088 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (compile): 15:50:50.919245 => 15:50:50.939788
+[0m15:50:50.941088 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (compile): 15:50:50.924783 => 15:50:50.941088
+[0m15:50:50.942089 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (compile): 15:50:50.927797 => 15:50:50.941088
+[0m15:50:50.942089 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (compile): 15:50:50.930797 => 15:50:50.942089
+[0m15:50:50.943089 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (compile): 15:50:50.933316 => 15:50:50.943089
+[0m15:50:50.943592 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_category
+[0m15:50:50.943592 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_customer
+[0m15:50:50.943592 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (compile): 15:50:50.936786 => 15:50:50.943592
+[0m15:50:50.944793 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_employee
+[0m15:50:50.944793 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:50.945795 [debug] [Thread-5 (]: Began executing node model.ADO_Assignment_updated.raw_order
+[0m15:50:50.971364 [debug] [Thread-1 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_category"
+[0m15:50:50.991400 [debug] [Thread-2 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_customer"
+[0m15:50:50.992401 [debug] [Thread-6 (]: Began executing node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:50.994401 [debug] [Thread-3 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_employee"
+[0m15:50:50.996908 [debug] [Thread-4 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:50:50.999911 [debug] [Thread-5 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_order"
+[0m15:50:51.002912 [debug] [Thread-6 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_order_details"
+[0m15:50:51.003911 [debug] [Thread-1 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_category"
+[0m15:50:51.005025 [debug] [Thread-2 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_customer"
+[0m15:50:51.005025 [debug] [Thread-3 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_employee"
+[0m15:50:51.006029 [debug] [Thread-4 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:50:51.007028 [debug] [Thread-5 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_order"
+[0m15:50:51.007028 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_category: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_category"} */
+create or replace   view Assignment2.NWT.raw_category
+  
+   as (
+    
+
+SELECT * FROM ASSIGNMENT2.NWT.CATEGORY
+  );
+[0m15:50:51.007028 [debug] [Thread-6 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_order_details"
+[0m15:50:51.008333 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_customer: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_customer"} */
+create or replace transient table Assignment2.NWT.raw_customer
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.CUSTOMER
+hello;
+[0m15:50:51.008333 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_employee: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_employee"} */
+create or replace transient table Assignment2.NWT.raw_employee
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.EMPLOYEE
+        );
+[0m15:50:51.009433 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_employee_territory: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_employee_territory"} */
+create or replace transient table Assignment2.NWT.raw_employee_territory
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.EMPLOYEETERRITORY
+        );
+[0m15:50:51.009433 [debug] [Thread-5 (]: On model.ADO_Assignment_updated.raw_order: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_order"} */
+create or replace transient table Assignment2.NWT.raw_order
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT."ORDER"
+        );
+[0m15:50:51.010560 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:50:51.010560 [debug] [Thread-6 (]: On model.ADO_Assignment_updated.raw_order_details: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_order_details"} */
+create or replace transient table Assignment2.NWT.raw_order_details
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.ORDER_DETAIL
+        );
+[0m15:50:51.011918 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:50:51.011918 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:50:51.011918 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:50:51.012919 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:50:51.014198 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:50:51.978463 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01b17bd6-3200-f9ce-0007-2c9600054a46
+[0m15:50:51.979521 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 6 at position 5 unexpected ';'.
+[0m15:50:51.979521 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (execute): 15:50:50.971364 => 15:50:51.979521
+[0m15:50:51.979521 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_customer: Close
+[0m15:50:52.027575 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:50:52.049498 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (execute): 15:50:50.945795 => 15:50:52.049498
+[0m15:50:52.049498 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_category: Close
+[0m15:50:52.054357 [debug] [Thread-2 (]: Database Error in model raw_customer (models\raw\raw_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 5 unexpected ';'.
+  compiled Code at target\run\ADO_Assignment_updated\models\raw\raw_customer.sql
+[0m15:50:52.055358 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754E78E10>]}
+[0m15:50:52.055358 [error] [Thread-2 (]: 2 of 11 ERROR creating sql table model NWT.raw_customer ........................ [[31mERROR[0m in 1.14s]
+[0m15:50:52.056359 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_customer
+[0m15:50:52.057359 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_product
+[0m15:50:52.057359 [info ] [Thread-2 (]: 7 of 11 START sql table model NWT.raw_product .................................. [RUN]
+[0m15:50:52.058551 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_customer, now model.ADO_Assignment_updated.raw_product)
+[0m15:50:52.059622 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_product
+[0m15:50:52.061755 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_product"
+[0m15:50:52.062757 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_product (compile): 15:50:52.060125 => 15:50:52.062757
+[0m15:50:52.062757 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_product
+[0m15:50:52.066462 [debug] [Thread-2 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_product"
+[0m15:50:52.068985 [debug] [Thread-2 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_product"
+[0m15:50:52.068985 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_product: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_product"} */
+create or replace transient table Assignment2.NWT.raw_product
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.PRODUCT
+        );
+[0m15:50:52.070065 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:50:52.094064 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754A85A50>]}
+[0m15:50:52.095070 [info ] [Thread-1 (]: 1 of 11 OK created sql view model NWT.raw_category ............................. [[32mSUCCESS 1[0m in 1.18s]
+[0m15:50:52.096087 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_category
+[0m15:50:52.097521 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_region
+[0m15:50:52.097521 [info ] [Thread-1 (]: 8 of 11 START sql table model NWT.raw_region ................................... [RUN]
+[0m15:50:52.098582 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_category, now model.ADO_Assignment_updated.raw_region)
+[0m15:50:52.099676 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_region
+[0m15:50:52.101677 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_region"
+[0m15:50:52.102680 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_region (compile): 15:50:52.099676 => 15:50:52.102680
+[0m15:50:52.104036 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_region
+[0m15:50:52.106553 [debug] [Thread-1 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_region"
+[0m15:50:52.107555 [debug] [Thread-1 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_region"
+[0m15:50:52.108557 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_region: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_region"} */
+create or replace transient table Assignment2.NWT.raw_region
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.REGION
+        );
+[0m15:50:52.108557 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:50:52.413740 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:50:52.416245 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (execute): 15:50:50.995401 => 15:50:52.416245
+[0m15:50:52.417246 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_employee_territory: Close
+[0m15:50:52.456339 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754C5C790>]}
+[0m15:50:52.457344 [info ] [Thread-4 (]: 4 of 11 OK created sql table model NWT.raw_employee_territory .................. [[32mSUCCESS 1[0m in 1.54s]
+[0m15:50:52.458695 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:50:52.459701 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:52.459701 [info ] [Thread-4 (]: 9 of 11 START sql table model NWT.raw_shipper .................................. [RUN]
+[0m15:50:52.460702 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee_territory, now model.ADO_Assignment_updated.raw_shipper)
+[0m15:50:52.461702 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:52.463702 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_shipper"
+[0m15:50:52.465703 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (compile): 15:50:52.461702 => 15:50:52.464703
+[0m15:50:52.465703 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:52.468206 [debug] [Thread-4 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_shipper"
+[0m15:50:52.469223 [debug] [Thread-4 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_shipper"
+[0m15:50:52.470464 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_shipper: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_shipper"} */
+create or replace transient table Assignment2.NWT.raw_shipper
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.SHIPPER
+        );
+[0m15:50:52.471466 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:50:52.659372 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:50:52.662388 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (execute): 15:50:50.997912 => 15:50:52.661386
+[0m15:50:52.663705 [debug] [Thread-5 (]: On model.ADO_Assignment_updated.raw_order: Close
+[0m15:50:52.696794 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:50:52.699507 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (execute): 15:50:50.992401 => 15:50:52.699507
+[0m15:50:52.700509 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_employee: Close
+[0m15:50:52.736126 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754C5D5D0>]}
+[0m15:50:52.737128 [info ] [Thread-5 (]: 5 of 11 OK created sql table model NWT.raw_order ............................... [[32mSUCCESS 1[0m in 1.82s]
+[0m15:50:52.738128 [debug] [Thread-5 (]: Finished running node model.ADO_Assignment_updated.raw_order
+[0m15:50:52.739128 [debug] [Thread-5 (]: Began running node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:52.739128 [info ] [Thread-5 (]: 10 of 11 START sql table model NWT.raw_supplier ................................ [RUN]
+[0m15:50:52.740129 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_order, now model.ADO_Assignment_updated.raw_supplier)
+[0m15:50:52.741129 [debug] [Thread-5 (]: Began compiling node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:52.743130 [debug] [Thread-5 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_supplier"
+[0m15:50:52.746646 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (compile): 15:50:52.741129 => 15:50:52.746646
+[0m15:50:52.747646 [debug] [Thread-5 (]: Began executing node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:52.749646 [debug] [Thread-5 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_supplier"
+[0m15:50:52.751647 [debug] [Thread-5 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_supplier"
+[0m15:50:52.751647 [debug] [Thread-5 (]: On model.ADO_Assignment_updated.raw_supplier: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_supplier"} */
+create or replace transient table Assignment2.NWT.raw_supplier
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.SUPPLIER
+        );
+[0m15:50:52.752647 [debug] [Thread-5 (]: Opening a new connection, currently in state closed
+[0m15:50:52.759167 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754C5C550>]}
+[0m15:50:52.761167 [info ] [Thread-3 (]: 3 of 11 OK created sql table model NWT.raw_employee ............................ [[32mSUCCESS 1[0m in 1.85s]
+[0m15:50:52.762168 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_employee
+[0m15:50:52.763168 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_territory
+[0m15:50:52.763168 [info ] [Thread-3 (]: 11 of 11 START sql table model NWT.raw_territory ............................... [RUN]
+[0m15:50:52.764168 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee, now model.ADO_Assignment_updated.raw_territory)
+[0m15:50:52.765168 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_territory
+[0m15:50:52.768187 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_territory"
+[0m15:50:52.769940 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_territory (compile): 15:50:52.765168 => 15:50:52.769940
+[0m15:50:52.771016 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_territory
+[0m15:50:52.773022 [debug] [Thread-3 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_territory"
+[0m15:50:52.775060 [debug] [Thread-3 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_territory"
+[0m15:50:52.775587 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_territory: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_territory"} */
+create or replace transient table Assignment2.NWT.raw_territory
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.TERRITORY
+        );
+[0m15:50:52.775587 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:50:52.872689 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:50:52.877589 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (execute): 15:50:51.000911 => 15:50:52.876587
+[0m15:50:52.877589 [debug] [Thread-6 (]: On model.ADO_Assignment_updated.raw_order_details: Close
+[0m15:50:52.922617 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754CD4B10>]}
+[0m15:50:52.923620 [info ] [Thread-6 (]: 6 of 11 OK created sql table model NWT.raw_order_details ....................... [[32mSUCCESS 1[0m in 2.01s]
+[0m15:50:52.926098 [debug] [Thread-6 (]: Finished running node model.ADO_Assignment_updated.raw_order_details
+[0m15:50:53.272470 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:50:53.275775 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_product (execute): 15:50:52.064186 => 15:50:53.275775
+[0m15:50:53.276277 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_product: Close
+[0m15:50:53.312887 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:50:53.316316 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_region (execute): 15:50:52.104036 => 15:50:53.316316
+[0m15:50:53.317321 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_region: Close
+[0m15:50:53.318327 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237549FBA10>]}
+[0m15:50:53.319331 [info ] [Thread-2 (]: 7 of 11 OK created sql table model NWT.raw_product ............................. [[32mSUCCESS 1[0m in 1.26s]
+[0m15:50:53.321468 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_product
+[0m15:50:53.358484 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754C44810>]}
+[0m15:50:53.359484 [info ] [Thread-1 (]: 8 of 11 OK created sql table model NWT.raw_region .............................. [[32mSUCCESS 1[0m in 1.26s]
+[0m15:50:53.360484 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_region
+[0m15:50:53.623948 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:50:53.626431 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (execute): 15:50:52.465703 => 15:50:53.626431
+[0m15:50:53.627434 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_shipper: Close
+[0m15:50:53.672237 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023755FB7A90>]}
+[0m15:50:53.673741 [info ] [Thread-4 (]: 9 of 11 OK created sql table model NWT.raw_shipper ............................. [[32mSUCCESS 1[0m in 1.21s]
+[0m15:50:53.674753 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_shipper
+[0m15:50:53.899874 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:50:53.902874 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (execute): 15:50:52.747646 => 15:50:53.902874
+[0m15:50:53.902874 [debug] [Thread-5 (]: On model.ADO_Assignment_updated.raw_supplier: Close
+[0m15:50:53.943852 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002375110AD90>]}
+[0m15:50:53.945216 [info ] [Thread-5 (]: 10 of 11 OK created sql table model NWT.raw_supplier ........................... [[32mSUCCESS 1[0m in 1.20s]
+[0m15:50:53.947224 [debug] [Thread-5 (]: Finished running node model.ADO_Assignment_updated.raw_supplier
+[0m15:50:53.951756 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:50:53.953791 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_territory (execute): 15:50:52.771016 => 15:50:53.953791
+[0m15:50:53.954808 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_territory: Close
+[0m15:50:54.005956 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57ace6c8-2042-4353-8166-86f2a0517fe8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023754D62B50>]}
+[0m15:50:54.006956 [info ] [Thread-3 (]: 11 of 11 OK created sql table model NWT.raw_territory .......................... [[32mSUCCESS 1[0m in 1.24s]
+[0m15:50:54.007957 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_territory
+[0m15:50:54.010192 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:50:54.010192 [debug] [MainThread]: Connection 'list_Assignment2' was properly closed.
+[0m15:50:54.011199 [debug] [MainThread]: Connection 'list_Assignment2_NWT' was properly closed.
+[0m15:50:54.011199 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_region' was properly closed.
+[0m15:50:54.012246 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_product' was properly closed.
+[0m15:50:54.012246 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_territory' was properly closed.
+[0m15:50:54.012246 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_shipper' was properly closed.
+[0m15:50:54.013249 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_supplier' was properly closed.
+[0m15:50:54.013249 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_order_details' was properly closed.
+[0m15:50:54.013249 [info ] [MainThread]: 
+[0m15:50:54.014752 [info ] [MainThread]: Finished running 10 table models, 1 view model in 0 hours 0 minutes and 4.73 seconds (4.73s).
+[0m15:50:54.017412 [debug] [MainThread]: Command end result
+[0m15:50:54.023932 [info ] [MainThread]: 
+[0m15:50:54.025436 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:50:54.026453 [info ] [MainThread]: 
+[0m15:50:54.026453 [error] [MainThread]: [33mDatabase Error in model raw_customer (models\raw\raw_customer.sql)[0m
+[0m15:50:54.027628 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m15:50:54.028131 [error] [MainThread]:   syntax error line 6 at position 5 unexpected ';'.
+[0m15:50:54.029133 [error] [MainThread]:   compiled Code at target\run\ADO_Assignment_updated\models\raw\raw_customer.sql
+[0m15:50:54.029133 [info ] [MainThread]: 
+[0m15:50:54.030134 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=1 SKIP=0 TOTAL=11
+[0m15:50:54.031352 [debug] [MainThread]: Command `dbt run` failed at 15:50:54.031352 after 5.25 seconds
+[0m15:50:54.031855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002374D7BFB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023753D1CF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023753A7A790>]}
+[0m15:50:54.031855 [debug] [MainThread]: Flushing usage events
+[0m15:51:48.250378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150FC5A5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021510072790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215100725D0>]}
+
+
+============================== 15:51:48.254883 | 53f36223-9697-4030-8aee-9e1c3941bf8c ==============================
+[0m15:51:48.254883 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:51:48.254883 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:51:48.598324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53f36223-9697-4030-8aee-9e1c3941bf8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151020E550>]}
+[0m15:51:48.613646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53f36223-9697-4030-8aee-9e1c3941bf8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021510EC2490>]}
+[0m15:51:48.615980 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m15:51:48.626610 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m15:51:48.656366 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ADO_Assignment_updated: raw\raw_product.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | models: 
+    2  |  - name: raw_product
+    3  |     description: Raw table for product. This is where information of products lie in.
+    4  |     columns:
+    5  |       - name: PRODUCTID
+    6  |         description: Unique identifier for each product (Primary Key), integer type.
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed in this context
+      in "<unicode string>", line 3, column 16
+[0m15:51:48.658929 [debug] [MainThread]: Command `dbt run` failed at 15:51:48.657836 after 0.42 seconds
+[0m15:51:48.659434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021509C7FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151021FDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151021FED0>]}
+[0m15:51:48.659936 [debug] [MainThread]: Flushing usage events
+[0m15:52:36.850766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259AF8D7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259AF8D5190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259AF8D6E90>]}
+
+
+============================== 15:52:36.855607 | a407b947-851f-45b8-9e77-63fbfca83e0c ==============================
+[0m15:52:36.855607 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:52:36.856607 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:52:37.201449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a407b947-851f-45b8-9e77-63fbfca83e0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259AF7428D0>]}
+[0m15:52:37.219300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a407b947-851f-45b8-9e77-63fbfca83e0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259AF9045D0>]}
+[0m15:52:37.221338 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m15:52:37.231873 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m15:52:37.257822 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ADO_Assignment_updated: raw\raw_product.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | models: 
+    2  |  - name: raw_product
+    3  |     description: Raw table for product. This is where information of products lie in.
+    4  |     columns:
+    5  |       - name: PRODUCTID
+    6  |         description: Unique identifier for each product (Primary Key), integer type.
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed in this context
+      in "<unicode string>", line 3, column 16
+[0m15:52:37.259842 [debug] [MainThread]: Command `dbt run` failed at 15:52:37.259842 after 0.43 seconds
+[0m15:52:37.261175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259A961DC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B060F690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B05C9A10>]}
+[0m15:52:37.261175 [debug] [MainThread]: Flushing usage events
+[0m15:53:02.587771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204A1D05950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204A1CF8B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204A1D07C90>]}
+
+
+============================== 15:53:02.591285 | e42515c5-d85c-434a-9a2c-17e4e98c0978 ==============================
+[0m15:53:02.591285 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:53:02.592288 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:53:02.940014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e42515c5-d85c-434a-9a2c-17e4e98c0978', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204A1B62850>]}
+[0m15:53:02.954036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e42515c5-d85c-434a-9a2c-17e4e98c0978', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204A299E350>]}
+[0m15:53:02.956038 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m15:53:02.966849 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m15:53:02.998372 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ADO_Assignment_updated: raw\raw_shipper.yml - Runtime Error
+    Syntax error near line 2
+    ------------------------------
+    1  | - name: raw_shipper
+    2  |     description: Raw table for shipper. Information about the shipping companies can be found here.
+    3  |     columns:
+    4  |       - name: SHIPPERID 
+    5  |         description: Unique Shipper identifier (Primary Key) for each shipper, integer type.
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed in this context
+      in "<unicode string>", line 2, column 16
+[0m15:53:03.001373 [debug] [MainThread]: Command `dbt run` failed at 15:53:03.001373 after 0.43 seconds
+[0m15:53:03.001373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049B78FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204A1D0BE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204A1D08090>]}
+[0m15:53:03.002373 [debug] [MainThread]: Flushing usage events
+[0m15:53:33.146892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F009305950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F009162790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F009307C90>]}
+
+
+============================== 15:53:33.150396 | bf8d01e7-5288-4275-ad64-aea3a6af8ed6 ==============================
+[0m15:53:33.150396 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:53:33.151419 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:53:33.492614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0092FEA50>]}
+[0m15:53:33.507374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0084389D0>]}
+[0m15:53:33.509374 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m15:53:33.519383 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m15:53:33.615736 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:53:33.617594 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:53:33.617594 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ADO_Assignment_updated.reporting
+- models.ADO_Assignment_updated.staging
+[0m15:53:33.623856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A114950>]}
+[0m15:53:33.629859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A047E50>]}
+[0m15:53:33.630860 [info ] [MainThread]: Found 11 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m15:53:33.631364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F005788DD0>]}
+[0m15:53:33.633346 [info ] [MainThread]: 
+[0m15:53:33.635717 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:53:33.637477 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_Assignment2'
+[0m15:53:33.649760 [debug] [ThreadPool]: Using snowflake connection "list_Assignment2"
+[0m15:53:33.650763 [debug] [ThreadPool]: On list_Assignment2: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "list_Assignment2"} */
+show terse schemas in database Assignment2
+    limit 10000
+[0m15:53:33.651266 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:53:34.459909 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m15:53:34.460909 [debug] [ThreadPool]: On list_Assignment2: Close
+[0m15:53:34.508339 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_Assignment2_NWT'
+[0m15:53:34.514095 [debug] [ThreadPool]: Using snowflake connection "list_Assignment2_NWT"
+[0m15:53:34.515221 [debug] [ThreadPool]: On list_Assignment2_NWT: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "list_Assignment2_NWT"} */
+show terse objects in Assignment2.NWT
+[0m15:53:34.515221 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:53:35.219215 [debug] [ThreadPool]: SQL status: SUCCESS 25 in 1.0 seconds
+[0m15:53:35.220720 [debug] [ThreadPool]: On list_Assignment2_NWT: Close
+[0m15:53:35.275906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F008942650>]}
+[0m15:53:35.276906 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m15:53:35.276906 [info ] [MainThread]: 
+[0m15:53:35.284977 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_category
+[0m15:53:35.286126 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_customer
+[0m15:53:35.286126 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_employee
+[0m15:53:35.286126 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:35.286126 [debug] [Thread-5 (]: Began running node model.ADO_Assignment_updated.raw_order
+[0m15:53:35.287535 [debug] [Thread-6 (]: Began running node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:35.287535 [info ] [Thread-1 (]: 1 of 11 START sql view model NWT.raw_category .................................. [RUN]
+[0m15:53:35.287535 [info ] [Thread-2 (]: 2 of 11 START sql table model NWT.raw_customer ................................. [RUN]
+[0m15:53:35.288701 [info ] [Thread-3 (]: 3 of 11 START sql table model NWT.raw_employee ................................. [RUN]
+[0m15:53:35.288701 [info ] [Thread-4 (]: 4 of 11 START sql table model NWT.raw_employee_territory ....................... [RUN]
+[0m15:53:35.289905 [info ] [Thread-5 (]: 5 of 11 START sql table model NWT.raw_order .................................... [RUN]
+[0m15:53:35.291326 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_category'
+[0m15:53:35.289905 [info ] [Thread-6 (]: 6 of 11 START sql table model NWT.raw_order_details ............................ [RUN]
+[0m15:53:35.293326 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_customer'
+[0m15:53:35.293326 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee'
+[0m15:53:35.294829 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee_territory'
+[0m15:53:35.296271 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order'
+[0m15:53:35.296774 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_category
+[0m15:53:35.296774 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order_details'
+[0m15:53:35.297778 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_customer
+[0m15:53:35.298780 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_employee
+[0m15:53:35.298780 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:35.298780 [debug] [Thread-5 (]: Began compiling node model.ADO_Assignment_updated.raw_order
+[0m15:53:35.305396 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_category"
+[0m15:53:35.306640 [debug] [Thread-6 (]: Began compiling node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:35.309848 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_customer"
+[0m15:53:35.313085 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee"
+[0m15:53:35.315806 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:53:35.317980 [debug] [Thread-5 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order"
+[0m15:53:35.320492 [debug] [Thread-6 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order_details"
+[0m15:53:35.321492 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (compile): 15:53:35.299785 => 15:53:35.321492
+[0m15:53:35.322777 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (compile): 15:53:35.306640 => 15:53:35.322777
+[0m15:53:35.323781 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (compile): 15:53:35.310848 => 15:53:35.322777
+[0m15:53:35.323781 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (compile): 15:53:35.314087 => 15:53:35.323781
+[0m15:53:35.324784 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (compile): 15:53:35.316818 => 15:53:35.324784
+[0m15:53:35.324784 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_category
+[0m15:53:35.326122 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (compile): 15:53:35.319483 => 15:53:35.326122
+[0m15:53:35.326625 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_customer
+[0m15:53:35.326625 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_employee
+[0m15:53:35.327774 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:35.327774 [debug] [Thread-5 (]: Began executing node model.ADO_Assignment_updated.raw_order
+[0m15:53:35.354836 [debug] [Thread-1 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_category"
+[0m15:53:35.354836 [debug] [Thread-6 (]: Began executing node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:35.374976 [debug] [Thread-2 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_customer"
+[0m15:53:35.378719 [debug] [Thread-3 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_employee"
+[0m15:53:35.380733 [debug] [Thread-4 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:53:35.384295 [debug] [Thread-5 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_order"
+[0m15:53:35.386844 [debug] [Thread-6 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_order_details"
+[0m15:53:35.387286 [debug] [Thread-1 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_category"
+[0m15:53:35.388298 [debug] [Thread-2 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_customer"
+[0m15:53:35.389673 [debug] [Thread-3 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_employee"
+[0m15:53:35.390176 [debug] [Thread-4 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:53:35.390679 [debug] [Thread-5 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_order"
+[0m15:53:35.390679 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_category: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_category"} */
+create or replace   view Assignment2.NWT.raw_category
+  
+   as (
+    
+
+SELECT * FROM ASSIGNMENT2.NWT.CATEGORY
+  );
+[0m15:53:35.391975 [debug] [Thread-6 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_order_details"
+[0m15:53:35.392478 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_customer: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_customer"} */
+create or replace transient table Assignment2.NWT.raw_customer
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.CUSTOMER
+        );
+[0m15:53:35.392478 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_employee: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_employee"} */
+create or replace transient table Assignment2.NWT.raw_employee
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.EMPLOYEE
+        );
+[0m15:53:35.393481 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_employee_territory: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_employee_territory"} */
+create or replace transient table Assignment2.NWT.raw_employee_territory
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.EMPLOYEETERRITORY
+        );
+[0m15:53:35.393481 [debug] [Thread-5 (]: On model.ADO_Assignment_updated.raw_order: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_order"} */
+create or replace transient table Assignment2.NWT.raw_order
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT."ORDER"
+        );
+[0m15:53:35.394480 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:53:35.394480 [debug] [Thread-6 (]: On model.ADO_Assignment_updated.raw_order_details: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_order_details"} */
+create or replace transient table Assignment2.NWT.raw_order_details
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.ORDER_DETAIL
+        );
+[0m15:53:35.395481 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:53:35.395481 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:53:35.396482 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:53:35.396482 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:53:35.398481 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:53:36.404933 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:36.427585 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (execute): 15:53:35.328778 => 15:53:36.427585
+[0m15:53:36.427585 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_category: Close
+[0m15:53:36.476653 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A000690>]}
+[0m15:53:36.477653 [info ] [Thread-1 (]: 1 of 11 OK created sql view model NWT.raw_category ............................. [[32mSUCCESS 1[0m in 1.19s]
+[0m15:53:36.478653 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_category
+[0m15:53:36.479854 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_product
+[0m15:53:36.480857 [info ] [Thread-1 (]: 7 of 11 START sql table model NWT.raw_product .................................. [RUN]
+[0m15:53:36.481856 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_category, now model.ADO_Assignment_updated.raw_product)
+[0m15:53:36.482856 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_product
+[0m15:53:36.485857 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_product"
+[0m15:53:36.486857 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_product (compile): 15:53:36.482856 => 15:53:36.486857
+[0m15:53:36.487858 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_product
+[0m15:53:36.490375 [debug] [Thread-1 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_product"
+[0m15:53:36.491635 [debug] [Thread-1 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_product"
+[0m15:53:36.492637 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_product: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_product"} */
+create or replace transient table Assignment2.NWT.raw_product
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.PRODUCT
+        );
+[0m15:53:36.492637 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:53:36.873446 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:36.876450 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (execute): 15:53:35.375976 => 15:53:36.876450
+[0m15:53:36.876450 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_employee: Close
+[0m15:53:36.881452 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:36.883956 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (execute): 15:53:35.356115 => 15:53:36.882452
+[0m15:53:36.883956 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_customer: Close
+[0m15:53:36.921864 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A1DC510>]}
+[0m15:53:36.922865 [info ] [Thread-3 (]: 3 of 11 OK created sql table model NWT.raw_employee ............................ [[32mSUCCESS 1[0m in 1.63s]
+[0m15:53:36.922865 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_employee
+[0m15:53:36.924344 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_region
+[0m15:53:36.925346 [info ] [Thread-3 (]: 8 of 11 START sql table model NWT.raw_region ................................... [RUN]
+[0m15:53:36.925346 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee, now model.ADO_Assignment_updated.raw_region)
+[0m15:53:36.926850 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A466C10>]}
+[0m15:53:36.926850 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_region
+[0m15:53:36.930150 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_region"
+[0m15:53:36.927862 [info ] [Thread-2 (]: 2 of 11 OK created sql table model NWT.raw_customer ............................ [[32mSUCCESS 1[0m in 1.63s]
+[0m15:53:36.931150 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_customer
+[0m15:53:36.932453 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:36.932453 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_region (compile): 15:53:36.927862 => 15:53:36.932453
+[0m15:53:36.933850 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_region
+[0m15:53:36.932453 [info ] [Thread-2 (]: 9 of 11 START sql table model NWT.raw_shipper .................................. [RUN]
+[0m15:53:36.937355 [debug] [Thread-3 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_region"
+[0m15:53:36.938481 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_customer, now model.ADO_Assignment_updated.raw_shipper)
+[0m15:53:36.938481 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:36.942216 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_shipper"
+[0m15:53:36.942719 [debug] [Thread-3 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_region"
+[0m15:53:36.943757 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:53:36.944262 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_region: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_region"} */
+create or replace transient table Assignment2.NWT.raw_region
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.REGION
+        );
+[0m15:53:36.947774 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (execute): 15:53:35.384295 => 15:53:36.946771
+[0m15:53:36.947774 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (compile): 15:53:36.939946 => 15:53:36.947774
+[0m15:53:36.948790 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:53:36.948790 [debug] [Thread-6 (]: On model.ADO_Assignment_updated.raw_order_details: Close
+[0m15:53:36.948790 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:36.955275 [debug] [Thread-2 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_shipper"
+[0m15:53:36.956575 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:53:36.957863 [debug] [Thread-2 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_shipper"
+[0m15:53:36.960890 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (execute): 15:53:35.378719 => 15:53:36.959889
+[0m15:53:36.960890 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_shipper: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_shipper"} */
+create or replace transient table Assignment2.NWT.raw_shipper
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.SHIPPER
+        );
+[0m15:53:36.962113 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_employee_territory: Close
+[0m15:53:36.962113 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:53:36.995907 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A4DFB10>]}
+[0m15:53:36.997907 [info ] [Thread-6 (]: 6 of 11 OK created sql table model NWT.raw_order_details ....................... [[32mSUCCESS 1[0m in 1.70s]
+[0m15:53:37.006421 [debug] [Thread-6 (]: Finished running node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:37.007421 [debug] [Thread-6 (]: Began running node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:37.007421 [info ] [Thread-6 (]: 10 of 11 START sql table model NWT.raw_supplier ................................ [RUN]
+[0m15:53:37.009422 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_order_details, now model.ADO_Assignment_updated.raw_supplier)
+[0m15:53:37.009422 [debug] [Thread-6 (]: Began compiling node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:37.012934 [debug] [Thread-6 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_supplier"
+[0m15:53:37.012934 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A292990>]}
+[0m15:53:37.014934 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (compile): 15:53:37.010422 => 15:53:37.014934
+[0m15:53:37.013934 [info ] [Thread-4 (]: 4 of 11 OK created sql table model NWT.raw_employee_territory .................. [[32mSUCCESS 1[0m in 1.72s]
+[0m15:53:37.015935 [debug] [Thread-6 (]: Began executing node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:37.015935 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:37.020438 [debug] [Thread-6 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_supplier"
+[0m15:53:37.020438 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_territory
+[0m15:53:37.022954 [debug] [Thread-6 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_supplier"
+[0m15:53:37.021451 [info ] [Thread-4 (]: 11 of 11 START sql table model NWT.raw_territory ............................... [RUN]
+[0m15:53:37.022954 [debug] [Thread-6 (]: On model.ADO_Assignment_updated.raw_supplier: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_supplier"} */
+create or replace transient table Assignment2.NWT.raw_supplier
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.SUPPLIER
+        );
+[0m15:53:37.023955 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee_territory, now model.ADO_Assignment_updated.raw_territory)
+[0m15:53:37.024955 [debug] [Thread-6 (]: Opening a new connection, currently in state closed
+[0m15:53:37.024955 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_territory
+[0m15:53:37.028956 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_territory"
+[0m15:53:37.031289 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_territory (compile): 15:53:37.026956 => 15:53:37.031289
+[0m15:53:37.032290 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_territory
+[0m15:53:37.034816 [debug] [Thread-4 (]: Writing runtime sql for node "model.ADO_Assignment_updated.raw_territory"
+[0m15:53:37.035821 [debug] [Thread-4 (]: Using snowflake connection "model.ADO_Assignment_updated.raw_territory"
+[0m15:53:37.036831 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_territory: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "node_id": "model.ADO_Assignment_updated.raw_territory"} */
+create or replace transient table Assignment2.NWT.raw_territory
+         as
+        (
+
+SELECT * FROM ASSIGNMENT2.NWT.TERRITORY
+        );
+[0m15:53:37.036831 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:53:37.043174 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:53:37.047589 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (execute): 15:53:35.381736 => 15:53:37.047589
+[0m15:53:37.047589 [debug] [Thread-5 (]: On model.ADO_Assignment_updated.raw_order: Close
+[0m15:53:37.090685 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A0FB290>]}
+[0m15:53:37.090685 [info ] [Thread-5 (]: 5 of 11 OK created sql table model NWT.raw_order ............................... [[32mSUCCESS 1[0m in 1.79s]
+[0m15:53:37.091685 [debug] [Thread-5 (]: Finished running node model.ADO_Assignment_updated.raw_order
+[0m15:53:37.505255 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:37.509256 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_product (execute): 15:53:36.487858 => 15:53:37.508256
+[0m15:53:37.509256 [debug] [Thread-1 (]: On model.ADO_Assignment_updated.raw_product: Close
+[0m15:53:37.555995 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F008DB9590>]}
+[0m15:53:37.556497 [info ] [Thread-1 (]: 7 of 11 OK created sql table model NWT.raw_product ............................. [[32mSUCCESS 1[0m in 1.07s]
+[0m15:53:37.558500 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_product
+[0m15:53:38.109900 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:38.112468 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (execute): 15:53:36.953014 => 15:53:38.112468
+[0m15:53:38.113553 [debug] [Thread-2 (]: On model.ADO_Assignment_updated.raw_shipper: Close
+[0m15:53:38.114974 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:38.119480 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_region (execute): 15:53:36.933850 => 15:53:38.119480
+[0m15:53:38.121510 [debug] [Thread-3 (]: On model.ADO_Assignment_updated.raw_region: Close
+[0m15:53:38.161238 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A06E250>]}
+[0m15:53:38.162239 [info ] [Thread-3 (]: 8 of 11 OK created sql table model NWT.raw_region .............................. [[32mSUCCESS 1[0m in 1.24s]
+[0m15:53:38.163742 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_region
+[0m15:53:38.164753 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A06FBD0>]}
+[0m15:53:38.165754 [info ] [Thread-2 (]: 9 of 11 OK created sql table model NWT.raw_shipper ............................. [[32mSUCCESS 1[0m in 1.23s]
+[0m15:53:38.166755 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:38.177963 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:38.180964 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (execute): 15:53:37.016935 => 15:53:38.180964
+[0m15:53:38.181964 [debug] [Thread-6 (]: On model.ADO_Assignment_updated.raw_supplier: Close
+[0m15:53:38.224733 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F00A010A10>]}
+[0m15:53:38.225733 [info ] [Thread-6 (]: 10 of 11 OK created sql table model NWT.raw_supplier ........................... [[32mSUCCESS 1[0m in 1.22s]
+[0m15:53:38.226733 [debug] [Thread-6 (]: Finished running node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:38.260097 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:53:38.262603 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_territory (execute): 15:53:37.032290 => 15:53:38.262603
+[0m15:53:38.263603 [debug] [Thread-4 (]: On model.ADO_Assignment_updated.raw_territory: Close
+[0m15:53:38.305214 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf8d01e7-5288-4275-ad64-aea3a6af8ed6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F006702790>]}
+[0m15:53:38.307186 [info ] [Thread-4 (]: 11 of 11 OK created sql table model NWT.raw_territory .......................... [[32mSUCCESS 1[0m in 1.28s]
+[0m15:53:38.308190 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_territory
+[0m15:53:38.311350 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:53:38.311350 [debug] [MainThread]: Connection 'list_Assignment2' was properly closed.
+[0m15:53:38.311350 [debug] [MainThread]: Connection 'list_Assignment2_NWT' was properly closed.
+[0m15:53:38.311350 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_product' was properly closed.
+[0m15:53:38.312821 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_shipper' was properly closed.
+[0m15:53:38.313324 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_region' was properly closed.
+[0m15:53:38.313324 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_territory' was properly closed.
+[0m15:53:38.313324 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_order' was properly closed.
+[0m15:53:38.314336 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_supplier' was properly closed.
+[0m15:53:38.314336 [info ] [MainThread]: 
+[0m15:53:38.315442 [info ] [MainThread]: Finished running 1 view model, 10 table models in 0 hours 0 minutes and 4.68 seconds (4.68s).
+[0m15:53:38.317951 [debug] [MainThread]: Command end result
+[0m15:53:38.327240 [info ] [MainThread]: 
+[0m15:53:38.327240 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:53:38.328427 [info ] [MainThread]: 
+[0m15:53:38.328427 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
+[0m15:53:38.329704 [debug] [MainThread]: Command `dbt run` succeeded at 15:53:38.329704 after 5.20 seconds
+[0m15:53:38.330712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F008DB9990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0092EFFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F002D9FB50>]}
+[0m15:53:38.330712 [debug] [MainThread]: Flushing usage events
+[0m15:53:47.951436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428B884BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428B886510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428B885210>]}
+
+
+============================== 15:53:47.955060 | 720f7cff-1c5c-4cac-bfa2-1e3f7e6c2a5b ==============================
+[0m15:53:47.955060 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:53:47.956565 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:53:48.291449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '720f7cff-1c5c-4cac-bfa2-1e3f7e6c2a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428B88F050>]}
+[0m15:53:48.305939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '720f7cff-1c5c-4cac-bfa2-1e3f7e6c2a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428972B450>]}
+[0m15:53:48.307487 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m15:53:48.318855 [debug] [MainThread]: checksum: dd837546c89c9d03f3c2cb0ca6165266a30da6076d5d44e9991f7c5a8e5f5831, vars: {}, profile: , target: , version: 1.5.9
+[0m15:53:48.416498 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:53:48.417001 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:53:48.417001 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ADO_Assignment_updated.staging
+- models.ADO_Assignment_updated.reporting
+[0m15:53:48.423119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '720f7cff-1c5c-4cac-bfa2-1e3f7e6c2a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428B8967D0>]}
+[0m15:53:48.426141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '720f7cff-1c5c-4cac-bfa2-1e3f7e6c2a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428C661450>]}
+[0m15:53:48.427227 [info ] [MainThread]: Found 11 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m15:53:48.427730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '720f7cff-1c5c-4cac-bfa2-1e3f7e6c2a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024287D18E90>]}
+[0m15:53:48.432042 [info ] [MainThread]: 
+[0m15:53:48.433626 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:53:48.435767 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_Assignment2_NWT'
+[0m15:53:48.448761 [debug] [ThreadPool]: Using snowflake connection "list_Assignment2_NWT"
+[0m15:53:48.448761 [debug] [ThreadPool]: On list_Assignment2_NWT: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "list_Assignment2_NWT"} */
+show terse objects in Assignment2.NWT
+[0m15:53:48.449778 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:53:49.217845 [debug] [ThreadPool]: SQL status: SUCCESS 25 in 1.0 seconds
+[0m15:53:49.219845 [debug] [ThreadPool]: On list_Assignment2_NWT: Close
+[0m15:53:49.269273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '720f7cff-1c5c-4cac-bfa2-1e3f7e6c2a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428B8841D0>]}
+[0m15:53:49.270681 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m15:53:49.271685 [info ] [MainThread]: 
+[0m15:53:49.279173 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_category
+[0m15:53:49.279173 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_customer
+[0m15:53:49.280175 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_employee
+[0m15:53:49.280175 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:49.280175 [debug] [Thread-5 (]: Began running node model.ADO_Assignment_updated.raw_order
+[0m15:53:49.281175 [debug] [Thread-6 (]: Began running node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:49.281175 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_category'
+[0m15:53:49.282175 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_customer'
+[0m15:53:49.283175 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee'
+[0m15:53:49.284175 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_employee_territory'
+[0m15:53:49.285329 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order'
+[0m15:53:49.285831 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.ADO_Assignment_updated.raw_order_details'
+[0m15:53:49.285831 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_category
+[0m15:53:49.286833 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_customer
+[0m15:53:49.287834 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_employee
+[0m15:53:49.287834 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:49.287834 [debug] [Thread-5 (]: Began compiling node model.ADO_Assignment_updated.raw_order
+[0m15:53:49.289340 [debug] [Thread-6 (]: Began compiling node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:49.295725 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_category"
+[0m15:53:49.297725 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_customer"
+[0m15:53:49.299726 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee"
+[0m15:53:49.303113 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_employee_territory"
+[0m15:53:49.305114 [debug] [Thread-5 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order"
+[0m15:53:49.308115 [debug] [Thread-6 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_order_details"
+[0m15:53:49.309116 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (compile): 15:53:49.289340 => 15:53:49.309116
+[0m15:53:49.310622 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (compile): 15:53:49.296725 => 15:53:49.309116
+[0m15:53:49.310622 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (compile): 15:53:49.298725 => 15:53:49.310622
+[0m15:53:49.311639 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (compile): 15:53:49.301110 => 15:53:49.310622
+[0m15:53:49.311639 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (compile): 15:53:49.303113 => 15:53:49.311639
+[0m15:53:49.312638 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_category
+[0m15:53:49.312638 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (compile): 15:53:49.306115 => 15:53:49.312638
+[0m15:53:49.313637 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_customer
+[0m15:53:49.314639 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_employee
+[0m15:53:49.314639 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:49.315638 [debug] [Thread-5 (]: Began executing node model.ADO_Assignment_updated.raw_order
+[0m15:53:49.315638 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_category (execute): 15:53:49.315638 => 15:53:49.315638
+[0m15:53:49.316638 [debug] [Thread-6 (]: Began executing node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:49.317640 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_customer (execute): 15:53:49.316638 => 15:53:49.316638
+[0m15:53:49.317640 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_employee (execute): 15:53:49.317640 => 15:53:49.317640
+[0m15:53:49.318639 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_employee_territory (execute): 15:53:49.317640 => 15:53:49.317640
+[0m15:53:49.318639 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_order (execute): 15:53:49.318639 => 15:53:49.318639
+[0m15:53:49.319639 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_category
+[0m15:53:49.319639 [debug] [Thread-6 (]: Timing info for model.ADO_Assignment_updated.raw_order_details (execute): 15:53:49.319639 => 15:53:49.319639
+[0m15:53:49.321142 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_customer
+[0m15:53:49.322155 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_employee
+[0m15:53:49.323156 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_employee_territory
+[0m15:53:49.324340 [debug] [Thread-5 (]: Finished running node model.ADO_Assignment_updated.raw_order
+[0m15:53:49.324340 [debug] [Thread-1 (]: Began running node model.ADO_Assignment_updated.raw_product
+[0m15:53:49.325341 [debug] [Thread-6 (]: Finished running node model.ADO_Assignment_updated.raw_order_details
+[0m15:53:49.326341 [debug] [Thread-2 (]: Began running node model.ADO_Assignment_updated.raw_region
+[0m15:53:49.326341 [debug] [Thread-3 (]: Began running node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:49.327341 [debug] [Thread-4 (]: Began running node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:49.327341 [debug] [Thread-5 (]: Began running node model.ADO_Assignment_updated.raw_territory
+[0m15:53:49.328844 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_category, now model.ADO_Assignment_updated.raw_product)
+[0m15:53:49.329856 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_customer, now model.ADO_Assignment_updated.raw_region)
+[0m15:53:49.329856 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee, now model.ADO_Assignment_updated.raw_shipper)
+[0m15:53:49.330856 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_employee_territory, now model.ADO_Assignment_updated.raw_supplier)
+[0m15:53:49.331857 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.ADO_Assignment_updated.raw_order, now model.ADO_Assignment_updated.raw_territory)
+[0m15:53:49.331857 [debug] [Thread-1 (]: Began compiling node model.ADO_Assignment_updated.raw_product
+[0m15:53:49.333109 [debug] [Thread-2 (]: Began compiling node model.ADO_Assignment_updated.raw_region
+[0m15:53:49.333612 [debug] [Thread-3 (]: Began compiling node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:49.333612 [debug] [Thread-4 (]: Began compiling node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:49.334688 [debug] [Thread-5 (]: Began compiling node model.ADO_Assignment_updated.raw_territory
+[0m15:53:49.337261 [debug] [Thread-1 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_product"
+[0m15:53:49.340323 [debug] [Thread-2 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_region"
+[0m15:53:49.342827 [debug] [Thread-3 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_shipper"
+[0m15:53:49.345797 [debug] [Thread-4 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_supplier"
+[0m15:53:49.348367 [debug] [Thread-5 (]: Writing injected SQL for node "model.ADO_Assignment_updated.raw_territory"
+[0m15:53:49.349376 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_product (compile): 15:53:49.334688 => 15:53:49.349376
+[0m15:53:49.350369 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_region (compile): 15:53:49.337261 => 15:53:49.350369
+[0m15:53:49.351369 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (compile): 15:53:49.341324 => 15:53:49.350369
+[0m15:53:49.351369 [debug] [Thread-1 (]: Began executing node model.ADO_Assignment_updated.raw_product
+[0m15:53:49.351369 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (compile): 15:53:49.344260 => 15:53:49.351369
+[0m15:53:49.352369 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_territory (compile): 15:53:49.345797 => 15:53:49.352369
+[0m15:53:49.352369 [debug] [Thread-2 (]: Began executing node model.ADO_Assignment_updated.raw_region
+[0m15:53:49.353369 [debug] [Thread-3 (]: Began executing node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:49.353873 [debug] [Thread-1 (]: Timing info for model.ADO_Assignment_updated.raw_product (execute): 15:53:49.353873 => 15:53:49.353873
+[0m15:53:49.353873 [debug] [Thread-4 (]: Began executing node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:49.354875 [debug] [Thread-5 (]: Began executing node model.ADO_Assignment_updated.raw_territory
+[0m15:53:49.354875 [debug] [Thread-2 (]: Timing info for model.ADO_Assignment_updated.raw_region (execute): 15:53:49.354875 => 15:53:49.354875
+[0m15:53:49.355875 [debug] [Thread-3 (]: Timing info for model.ADO_Assignment_updated.raw_shipper (execute): 15:53:49.355875 => 15:53:49.355875
+[0m15:53:49.356874 [debug] [Thread-1 (]: Finished running node model.ADO_Assignment_updated.raw_product
+[0m15:53:49.357877 [debug] [Thread-4 (]: Timing info for model.ADO_Assignment_updated.raw_supplier (execute): 15:53:49.356874 => 15:53:49.356874
+[0m15:53:49.357877 [debug] [Thread-5 (]: Timing info for model.ADO_Assignment_updated.raw_territory (execute): 15:53:49.357877 => 15:53:49.357877
+[0m15:53:49.358875 [debug] [Thread-2 (]: Finished running node model.ADO_Assignment_updated.raw_region
+[0m15:53:49.359875 [debug] [Thread-3 (]: Finished running node model.ADO_Assignment_updated.raw_shipper
+[0m15:53:49.361876 [debug] [Thread-4 (]: Finished running node model.ADO_Assignment_updated.raw_supplier
+[0m15:53:49.362878 [debug] [Thread-5 (]: Finished running node model.ADO_Assignment_updated.raw_territory
+[0m15:53:49.364381 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:53:49.364381 [debug] [MainThread]: Connection 'list_Assignment2_NWT' was properly closed.
+[0m15:53:49.365677 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_product' was properly closed.
+[0m15:53:49.365677 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_region' was properly closed.
+[0m15:53:49.366180 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_shipper' was properly closed.
+[0m15:53:49.366180 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_supplier' was properly closed.
+[0m15:53:49.366180 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_territory' was properly closed.
+[0m15:53:49.367182 [debug] [MainThread]: Connection 'model.ADO_Assignment_updated.raw_order_details' was properly closed.
+[0m15:53:49.369188 [debug] [MainThread]: Command end result
+[0m15:53:49.377877 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m15:53:49.377877 [info ] [MainThread]: Building catalog
+[0m15:53:49.380964 [debug] [ThreadPool]: Acquiring new snowflake connection 'Assignment2.information_schema'
+[0m15:53:49.387493 [debug] [ThreadPool]: Using snowflake connection "Assignment2.information_schema"
+[0m15:53:49.387493 [debug] [ThreadPool]: On Assignment2.information_schema: /* {"app": "dbt", "dbt_version": "1.5.9", "profile_name": "ADO_Assignment_updated", "target_name": "dev", "connection_name": "Assignment2.information_schema"} */
+with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from Assignment2.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from Assignment2.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('nwt'))
+      order by "column_index"
+[0m15:53:49.388495 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:53:51.858366 [debug] [ThreadPool]: SQL status: SUCCESS 201 in 2.0 seconds
+[0m15:53:52.445386 [debug] [ThreadPool]: On Assignment2.information_schema: Close
+[0m15:53:52.533953 [info ] [MainThread]: Catalog written to C:\Users\marke\Course\Agile-Data-Ops-Assgiment2\target\catalog.json
+[0m15:53:52.536118 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:53:52.536118 after 4.60 seconds
+[0m15:53:52.536118 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:53:52.537265 [debug] [MainThread]: Connection 'Assignment2.information_schema' was properly closed.
+[0m15:53:52.537265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428C7BE510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242853BFB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002428C5BF2D0>]}
+[0m15:53:52.538269 [debug] [MainThread]: Flushing usage events
+[0m15:54:00.093357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274CA3C57D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274CA3C49D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274CA3C4790>]}
+
+
+============================== 15:54:00.097881 | c06b231c-104a-4f31-adae-1076a1a2e773 ==============================
+[0m15:54:00.097881 [info ] [MainThread]: Running with dbt=1.5.9
+[0m15:54:00.098882 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marke\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\marke\\Course\\Agile-Data-Ops-Assgiment2\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:54:00.441032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c06b231c-104a-4f31-adae-1076a1a2e773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274CA3CEA50>]}
+[0m15:54:00.456692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c06b231c-104a-4f31-adae-1076a1a2e773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274CA3CEA50>]}

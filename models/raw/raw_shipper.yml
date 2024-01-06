@@ -1,0 +1,12 @@
+models:
+  - name: raw_shipper
+    description: Raw table for shipper. Information about the shipping companies can be found here.
+    columns:
+      - name: SHIPPERID 
+        description: Unique Shipper identifier (Primary Key) for each shipper, integer type.
+
+      - name: COMPANYNAME     
+        description: Name of the shipping company, string type.
+
+      - name: PHONE
+        description: Company's phone number, string type.

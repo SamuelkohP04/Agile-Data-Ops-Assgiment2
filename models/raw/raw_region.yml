@@ -1,0 +1,9 @@
+models:
+  - name: raw_region
+    description: Raw table for region. Information about the regions can be found here.
+    columns:
+      - name: REGIONID   
+        description: Region identifier (Primary Key), integer type.
+
+      - name: REGIONDESCRIPTION
+        description: Description of the region, string type.

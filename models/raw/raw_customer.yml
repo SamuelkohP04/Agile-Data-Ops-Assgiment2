@@ -1,0 +1,37 @@
+models: 
+  - name: raw_customer
+    description: Raw table for customer. This is where information of customers lie in.
+    columns:
+      - name: CUSTOMERID
+        description: Unique Identifier for customers (Primary Key). String type.
+  
+      - name: COMPANYNAME
+        description: Name of the customer's company, string type.
+ 
+      - name: CONTACTNAME
+        description: Name of the primary contact person, string type.
+       
+      - name: CONTACTTITLE
+        description: Title of the primary contact person, string type.
+    
+      - name: ADDRESS
+        description: Customer's address, string type.
+    
+      - name: CITY
+        description: City where the customer is located, string type.
+     
+      - name: REGION
+        description: Region where the customer is located, string type.
+
+      - name: POSTALCODE
+        description: Postal code of the customer's location, string type.
+
+      - name: COUNTRY
+        description: Country where the customer is located, string type.
+    
+      - name: PHONE
+        description: Customer's phone number, string type.
+  
+      - name: FAX
+        description: Customer's fax number, string type.
+
