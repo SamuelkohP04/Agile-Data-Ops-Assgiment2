@@ -1,0 +1,325 @@
+models:
+  - name: raw_orders
+    columns:
+      - name: ORDERID
+        tests:
+          - unique
+          - not_null
+      - name: CUSTOMERID
+        tests:
+          - not_null
+      - name: EMPLOYEEID
+        tests:
+          - not_null
+      - name: ORDERDATE
+        tests:
+          - not_null
+      - name: REQUIREDDATE
+        tests:
+          - not_null
+      - name: SHIPPEDDATE
+        tests:
+          - not_null
+      - name: SHIPVIA
+        tests:
+          - not_null         
+      - name: FREIGHT
+        tests:
+          - not_null
+      - name: SHIPNAME
+        tests:
+          - not_null
+      - name: SHIPADDRESS
+        tests:
+          - not_null
+      - name: SHIPCITY
+        tests:
+          - not_null
+      - name: SHIPREGION
+        tests:
+          - not_null
+      - name: SHIPPOSTALCODE
+        tests:
+          - not_null
+      - name: SHIPCOUNTRY
+        tests:
+          - not_null
+          - accepted_values: 
+             values:
+              - 'USA'
+              - 'Germany'
+              - 'Brazil'
+              - 'France'
+              - 'UK'
+              - 'Venezuela'
+              - 'Austria'
+              - 'Sweden'
+              - 'Canada'
+              - 'Mexico'
+              - 'Italy'
+              - 'Spain'
+              - 'Finland'
+              - 'Belgium'
+              - 'Ireland'
+              - 'Denmark'
+              - 'Switzerland'
+              - 'Argentina'
+              - 'Portugal'
+              - 'Poland'
+              - 'Norway'
+
+  - name: raw_order_detail
+    columns:
+      - name: ORDERID
+        tests:
+          - not_null
+          - relationships:
+              to: ref('raw_orders')
+              field: ORDERID
+      - name: PRODUCTID
+        tests:
+          - not_null
+      - name: UNITPRICE
+        tests:
+          - not_null
+      - name: QUANTITY
+        tests:
+          - not_null
+      - name: DISCOUNT
+        tests:
+          - not_null
+    unique_constraints:
+      - columns: [orderID, productID]
+
+  - name: raw_customer
+    columns:
+      - name: CUSTOMERID
+        tests:
+          - not_null
+          - unique
+      - name: COMPANYNAME
+        tests:
+          - not_null
+      - name: CONTACTNAME
+        tests:
+          - not_null
+      - name: CONTACTTITLE
+        tests:
+          - not_null
+      - name: ADDRESS
+        tests:
+          - not_null
+      - name: CITY
+        tests:
+          - not_null
+      - name: REGION
+      - name: POSTALCODE
+        tests:
+          - not_null
+      - name: COUNTRY
+        tests:
+          - not_null
+      - name: PHONE
+        tests:
+          - not_null
+      - name: FAX
+        tests:
+          - not_null
+
+  - name: raw_category
+    columns:
+      - name: CATEGORYID
+        tests:
+          - unique
+          - not_null      
+      - name: CATEGORYNAME
+        tests:
+          - not_null
+      - name: DESCRIPTION
+        tests:
+          - not_null
+      - name: PICTURE
+        tests:
+          - not_null   
+
+  - name: raw_product
+    columns:
+      - name: PRODUCTID
+        tests:
+          - unique
+          - not_null        
+      - name: PRODUCTNAME
+        tests:
+          - not_null
+          - unique
+      - name: SUPPLIERID
+        tests:
+          - not_null
+      - name: CATEGORYID
+        tests:
+          - not_null
+      - name: QUANTITYPERUNIT
+        tests:
+          - not_null
+      - name: UNITPRICE
+        tests:
+          - not_null
+      - name: UNITSINSTOCK
+        tests:
+          - not_null
+      - name: UNITSONORDER
+        tests:
+          - not_null
+      - name: REORDERLEVEL
+        tests:
+          - not_null
+      - name: DISCONTINUED
+        tests: []
+        accepted_values: 
+        values:
+          - '0'
+          - '1'      
+
+  - name: raw_employee
+    columns:
+      - name: EMPLOYEEID
+        tests:
+          - unique
+          - not_null        
+      - name: LASTNAME
+        tests:
+          - not_null
+      - name: FIRSTNAME
+        tests:
+          - not_null
+      - name: TITLE
+        tests:
+          - not_null
+      - name: TITLEOFCOURTESY
+        tests:
+          - not_null
+      - name: BIRTHDATE
+        tests:
+          - not_null
+      - name: HIREDATE
+        tests:
+          - not_null
+      - name: ADDRESS
+        tests:
+          - not_null
+      - name: CITY
+        tests:
+          - not_null
+      - name: REGION
+        tests:
+          - not_null
+      - name: POSTALCODE
+        tests:
+          - not_null
+      - name: COUNTRY
+        tests:
+          - not_null
+      - name: HOMEPHONE
+        tests:
+          - not_null
+      - name: EXTENSION
+        tests:
+          - not_null
+      - name: PHOTO
+        tests:
+          - not_null
+      - name: NOTES
+        tests:
+          - not_null
+      - name: REPORTSTO
+        tests:
+          - not_null
+          - relationships:
+              to: ref('raw_employee')
+              field: employeeID
+      - name: PHOTOPATH
+        tests:
+          - not_null
+
+  - name: raw_employee_territory
+    columns:
+      - name: EMPLOYEEID
+        tests:
+          - not_null
+      - name: TERRITORYID
+        tests:
+          - not_null
+  - name: raw_region
+    columns:
+      - name: REGIONID
+        tests:
+          - unique
+          - not_null
+      - name: REGIONDESCRIPTION
+        tests:
+          - not_null
+  - name: raw_territory
+    columns:
+      - name: TERRITORYID
+        tests:
+          - unique
+          - not_null
+      - name: TERRITORYDESCRIPTION
+        tests:
+          - not_null
+      - name: REGIONID
+        tests:
+          - not_null
+
+  - name: raw_supplier
+    columns:
+      - name: SUPPLIERID
+        tests:
+          - unique
+          - not_null        
+      - name: COMPANYNAME
+        tests:
+          - not_null        
+      - name: CONTACTNAME
+        tests:
+          - not_null
+      - name: CONTACTTITLE
+        tests:
+          - not_null
+      - name: ADDRESS
+        tests:
+          - not_null
+      - name: CITY
+        tests:
+          - not_null
+      - name: REGION
+        tests:
+          - not_null
+      - name: POSTALCODE
+        tests:
+          - not_null
+      - name: COUNTRY
+        tests:
+          - not_null
+      - name: PHONE
+        tests:
+          - not_null
+      - name: FAX
+        tests:
+          - not_null
+      - name: HOMEPAGE
+        tests:
+          - not_null
+          
+  - name: raw_shipper
+    columns:
+      - name: SHIPPERID
+        tests:
+          - unique
+          - not_null
+      - name: COMPANYNAME
+        tests:
+          - not_null
+      - name: PHONE
+        tests:
+          - not_null
