@@ -1,0 +1,12 @@
+models:
+  - name: raw_territory
+    description: Raw table for territory.
+    columns:
+      - name: TERRITORYID     
+        description: Territory identifier (Primary Key), integer type.
+
+      - name: TERRITORYDESCRIPTION     
+        description: Description of the territory, string type.
+
+      - name: REGIONID    
+        description: ID of the region to which the territory belongs (Foreign Key from Region), integer type.

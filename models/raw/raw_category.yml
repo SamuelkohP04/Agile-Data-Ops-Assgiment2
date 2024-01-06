@@ -1,0 +1,15 @@
+models: 
+  - name: raw_category
+    description: Raw table for category. This is where information of product categories can be found
+    columns:
+      - name: CATEGORYID
+        description: Unique identifier for each category (Primary Key). Integer type.
+
+      - name: CATEGORYNAME
+        description: '{{ doc("categoryname") }}'
+
+      - name: DESCRIPTION
+        description: Description of the category. A string type.
+
+      - name: PICTURE
+        description: Binary data (PICTURE) of the category.

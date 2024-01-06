@@ -1,0 +1,33 @@
+models: 
+  - name: raw_product
+    description: Raw table for product. This is where information of products lie in.
+    columns:
+      - name: PRODUCTID
+        description: Unique identifier for each product (Primary Key), integer type.
+
+      - name: PRODUCTNAME
+        description: Name of each product, string type.
+
+      - name: SUPPLIERID
+        description: ID of each supplier (foreign key from Supplier), integer type. 
+
+      - name: CATEGORYID
+        description: ID of the category (Foreign Key from category) the product belongs to, int type.
+
+      - name: QUANTITYPERUNIT
+        description: Quantity of the product per unit, this is a string type.
+
+      - name: UNITPRICE
+        description: Price per unit of the product (in USD), float type.
+
+      - name: UNITSINSTOCK  
+        description: Number of units in stock, integer type.
+
+      - name: UNITSONORDER    
+        description: Number of units on order, integer type.
+
+      - name: REORDERLEVEL
+        description: Minimum quantity that should trigger a reorder of the particular product, integer type.
+
+      - name: DISCONTINUED
+        description: '{{ doc("discontinued") }}'
